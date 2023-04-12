@@ -1,12 +1,16 @@
 #calculate the yearly rainfall and average monthly rainfall in centimetres
+
 total=0
 year =int(input("Enter year:"))
+#using for() loop for repeat functions
+
 for i in range (1,year+1):
   for i in range(1,13):
     a =int(input("Enter the monthly rainfall in centimetreers:"))
     total=total+a
   print("total rainfall:", total ,"inches","\n")
 
+#for taking average
   print("average=", total/i,"inches")
 print("year-",i)
 
@@ -15,32 +19,47 @@ print("year-",i)
 num=float(input("Starting number of organism:"))
 per=float(input("Average daily percentage increase:"))
 total=int(input("Enter the number of days to display the final data:"))
+
+#giving some space in " " for making a clear list
+
 print("day approximate","       ","population")
 c=num
 print(num)
+
+#using for( loop to print ) number of organism with 5% increment
 for i in range (1,total):
  c =num+(num*(per/100))
  print(i,"                ",c,"\n")
  num=c
 
- #using nested for loop 
+#using nested for() loop for repeating #
 
- print("#"+"#")
+ print("#" + "#")
 for i in range(1,7):
   print("#"," "*i,"#")
 
-  # using lists, functions, and loops
+# using lists, functions, and loops
 
 a=[]
 
 num=int(input("myNumbers:"))
+
+#using for() loop to print list of numbers
+
 for i in range(1,num+1):
+
+#using append to add numbers in list
+
   a.append(i)
 print(a)
 
+#for making second list from first list from particular number
 greater =int(input("Enter the greater point:"))          
 b=[]
 for i in range(1,num+1):
+
+# for giving conditions 
+
   if(a[i-1]>greater):
    b.append(a[i-1])
 else:

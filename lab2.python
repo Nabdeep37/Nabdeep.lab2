@@ -34,7 +34,7 @@ for i in range (1,total):
 
 #using nested for() loop for repeating #
 
- print("#" + "#")
+print("#" + "#")
 for i in range(1,7):
   print("#"," "*i,"#")
 
